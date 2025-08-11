@@ -1,0 +1,13 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.one{
+    height: 50px;
+    background: violet;
+    margin-bottom: 5px;
+}
+.two{
+    height: 50px;
+    background: rgb(151, 112, 127);
+    margin-bottom: 5px;
+}
