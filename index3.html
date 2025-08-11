@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <p>Grant me for Jannah</p>
+    <p>Grant me for Jannah</p>
+    <p>Grant me for Jannah</p>
+    <p>Grant me for Jannah</p>
+    <h1>Salam</h1>
+    <button id="hide">click for hide</button>
+    <button id="show">click for show</button>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#hide').click(function () {
+                $('p:first').hide(2500);
+            })
+            $('#show').click(function () {
+                $('p:first').show(2500);
+            });
+        });
+    </script>
+</body>
+
+</html>

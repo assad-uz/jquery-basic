@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>ASSAD</td>
+            <td>assad.uz255@gmail.com</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>AZIM</td>
+            <td>azim@gmail.com</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>AKIB</td>
+            <td>akib@gmail.com</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>ABIR</td>
+            <td>abir@gmail.com</td>
+        </tr>
+    </table> <br>
+
+    <button id="hide">click for hide</button>
+    <button id="show">click for show</button>
+    <script src="js/jquery.js"></script>
+    
+    <script> 
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $("tr:odd").hide (2500);
+            })
+            $('#show').click(function(){
+                $("tr:odd").show (2500);
+            })
+        });
+
+    // $("ul li:first").hide (2500); (ul first)
+    </script>
+</body>
+</html>
