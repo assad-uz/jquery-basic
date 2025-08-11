@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="one"></div>
     <div class="two"></div>
     <!-- <div class="three"></div> -->
     <h1>Hi Everyone!</h1>
-    <button>Click Here</button>
+    <button id="hide">Click Here to hide</button>
+    <button id="show">Click Here to show</button>
+    <button id="toggle">Click Here for toggle</button>
     <p>How are you?</p>
     <script src="js/jquery.js"></script>
 
-<script>
-        $(document).ready(function(){
-            $("button").click(function(){
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
                 $("h1").hide(5000);
                 $('div.one').hide(5000);
                 $('div.two').hide(5000);
             });
         });
-</script>
-<script>
-        $(document).ready(function(){
-            $("button").click(function(){
+
+        $(document).ready(function () {
+            $("#show").click(function () {
                 $("h1").show(5000);
                 $('div.one').show(5000);
                 $('div.two').show(5000);
 
             });
         });
-</script>
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("h1").toggle(5000);
+                $('div.one').show(5000);
+                $('div.two').show(5000);
+            });
+        });
+    </script>
 
 </body>
+
 </html>
