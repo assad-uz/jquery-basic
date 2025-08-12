@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="pre pre2">This is a single-line css with class-tag and external css, use text attribute</p>
+    <button class="toggle">Set text content for all p element</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $(".toggle").click(function(){
+            $("p").text("Hello World!");
+            // $("p").html("Hello <b>World!</b>"); if you want using html tag inside.
+        });
+    });
+
+    </script>
+</body>
+</html>
